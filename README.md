@@ -13,6 +13,8 @@ How React works?
 12. again recompiled into java script , react now checks between the js format initally rendered and the newly rendered format , and changes only that particular component which has been changed
 13. It compares the new trees, it updates the real dom where it sees change.
 14. In short react only compares the newly created dom with already created dom and make changes in real dom only wherever its  needed
-15. 
+
+
+Limitation of UseState
 
 
