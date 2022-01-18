@@ -16,5 +16,28 @@ How React works?
 
 
 Limitation of UseState
+1. we can just use it in the top level of a component and not inside a function
+2. react hook inside the scope of the component
+   
 
 
+Modal 
+1. pop up box in websites like gfg asking us to signup.
+2. We can pass children props to our component
+3. Whatever you write inside a component will be reflected in our website by just using props.children
+4. We can use the same component name in our app.js component to pass diffrent items
+
+Portal
+1. helps us in removing a component from another component and put it at the bottom.
+2. Dont forget to look at the styles
+
+
+------------------------------------------------
+STYLES 
+1. global style sheet- effect all the component ,with class name wherever they're in the project
+2. component style sheet - making css sheets for various components .Css files only to that component.Avoiding messy files
+3. Inline sheet - style= {{color:'white'}}
+   {object} = {}-> dynamic value and multiple css seprated by comma
+   eg style ={{color:"white",padding:"2px"}}
+4. Dyanamic style - based on condition changing the styles.
+5. conditional css - adding dyanamic classes
