@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Title from './components/Title'
 import Modal  from './components/Modal';
 import EventList from './components/EventList';
+import NewEventForm from './components/NewEventForm'
 function App() {
   const[showModal, setShowModal] = useState(false);
   const [showEvents, setShowEvents] = useState(true)
@@ -14,6 +15,10 @@ function App() {
   ]);
   const handleClose = () =>{
     setShowModal(false);
+  }
+  const addEvent =(event) =>{
+    events.push(event);
+    setEvents(events);
   }
   const handleClick = (id) =>{
       const new_array = events.filter((event) =>(event.id !== id) );
@@ -35,13 +40,11 @@ function App() {
         }
       {showModal && 
         <Modal handleClose ={handleClose}>
-        <h2>10% off Coupoun Code!!</h2>
-        <p>Use this code!</p>
-      
+        <NewEventForm addEvent={addEvent} setShowModal={setShowModal} />
         </Modal>
       }
       <div>
-        <button onClick={() =>setShowModal(true)}>Show Modal</button>
+        <button onClick={() =>setShowModal(true)}>Add New Event</button>
       </div>
       
      

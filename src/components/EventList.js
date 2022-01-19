@@ -8,7 +8,7 @@ const EventList = ({events,handleClick}) => {
         events.map((event) =>(
         <div key ={event.id}>
           <h1>{event.id} - {event.title}</h1>
-          <button onClick={() => handleClick(event.id)}>Delete Event</button>
+          <button style={{backgroundColor:"grey"}} onClick={() => handleClick(event.id)}>Delete Event</button>
         </div>
       ))
       

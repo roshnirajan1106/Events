@@ -41,3 +41,12 @@ STYLES
    eg style ={{color:"white",padding:"2px"}}
 4. Dyanamic style - based on condition changing the styles.
 5. conditional css - adding dyanamic classes
+
+----------------------------
+
+Forms
+1. Default action of button is submit
+2. Controlled input - to reset the value of forms value ={data} in form. 
+3. onSumbit function not on button, its important we dont attach onSubmit handler on button because form is the one who is emmiting the submit event
+4. using [...prev, new] means using 3 dots appending the previous state with the new
+5. 
